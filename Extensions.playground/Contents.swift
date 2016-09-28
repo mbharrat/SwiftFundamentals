@@ -31,8 +31,17 @@ struct Car {
         }
     }
 }
+//each property given simple getter, for conven. return default values
 extension Car: VehicleType {
     var topSpeed: Velocity { return 180 }
     var numberOfDoors: Int { return 4 }
     var hasFlatBed: Bool { return false }
 }
+//new extension adds initializer that accepts arguments only for specific instances
+extension Car {
+    init(carMake: String, carModel: String, carYear: Int) {
+        self.init(make: carMake, model: carModel, year: carYear, color: "Black", nickname: "N/A", gasLevel: 1.0)
+    }
+}
+//has your values as well as default values
+var c = Car(carMake: "Ford", carModel: "Fusion", carYear: 2013)
