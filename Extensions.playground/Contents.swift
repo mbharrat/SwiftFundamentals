@@ -88,3 +88,12 @@ c.emptyGas(amount: 0.3)
 c.gasLevel
 c.fillGas()
 c.gasLevel
+
+
+//BRONZE CHALLENGE
+//      extend Int to have timesFive property
+extension Int {
+    var timesFive: Int { return self * 5 }
+}
+
+5.timesFive
