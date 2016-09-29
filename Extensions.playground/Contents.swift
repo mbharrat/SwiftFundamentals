@@ -12,7 +12,6 @@ extension Velocity {
 //add protocol conformance to a type with an extension (define interface for type)
 protocol VehicleType {
     var topSpeed: Velocity { get }
-    var numberOfDoors: Int { get }
     var hasFlatBed: Bool { get }
 }
 
@@ -23,6 +22,7 @@ struct Car {
     let year: Int
     let color: String
     let nickname: String
+    var numberOfDoors: Int
     var gasLevel: Double {      //mutable stored property w/ property observer
         willSet {
             precondition(newValue <= 1.0 && newValue >= 0.0, "New Value must be between 0 and 1.")
@@ -30,21 +30,21 @@ struct Car {
         //precondition() ensures newValue is between desginated ranges
         }
     }
+ 
 }
 //each property given simple getter, for conven. return default values
 extension Car: VehicleType {
     var topSpeed: Velocity { return 180 }
-    var numberOfDoors: Int { return 4 }
     var hasFlatBed: Bool { return false }
 }
 //new extension adds initializer that accepts arguments only for specific instances
 extension Car {
-    init(carMake: String, carModel: String, carYear: Int) {
-        self.init(make: carMake, model: carModel, year: carYear, color: "Black", nickname: "N/A", gasLevel: 1.0)
+    init(carMake: String, carModel: String, carYear: Int){//, Doors: Int) {
+        self.init(make: carMake, model: carModel, year: carYear, color: "Black", nickname: "N/A", numberOfDoors: 2, gasLevel: 1.0)
     }
 }
 //has your values as well as default values
-var c = Car(carMake: "Ford", carModel: "Fusion", carYear: 2013)
+var c = Car(carMake: "Ford", carModel: "Fusion", carYear: 2013)//, Doors: -1)
 
 
 //this new extension adds nested type called CarKind
@@ -77,7 +77,7 @@ c.kind.description
 //since Car is a STRUCT must use mutating keyword
 extension Car {
     mutating func emptyGas(amount: Double) {
-        precondition(amount <= 1 && amount > 0, "Amount to remove must be between 0 and 1.")
+        precondition(amount <= 1 && amount > 0 && (gasLevel - amount >= 0), "Amount to remove must be between 0 and 1 AND can not be more than amount of gas left in tank")
         gasLevel -= amount
     }
     mutating func fillGas() {
@@ -88,6 +88,9 @@ c.emptyGas(amount: 0.3)
 c.gasLevel
 c.fillGas()
 c.gasLevel
+c.emptyGas(amount: 0.7)
+c.gasLevel
+c.emptyGas(amount: 0.4)
 
 
 //BRONZE CHALLENGE
