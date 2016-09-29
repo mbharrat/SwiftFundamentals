@@ -45,3 +45,30 @@ extension Car {
 }
 //has your values as well as default values
 var c = Car(carMake: "Ford", carModel: "Fusion", carYear: 2013)
+
+
+//this new extension adds nested type called CarKind
+//CarKind = enumeration that has coupe and sedan cases
+//          adds computed prop of kind and must conform to customstringconvertible
+extension Car {
+    enum CarKind: CustomStringConvertible {
+        case Coupe, Sedan
+        var description: String {
+            switch self {
+            case .Coupe:
+                return "Coupe"
+                
+            case .Sedan:
+                return "Sedan"
+            }
+        }
+    }
+    var kind: CarKind {
+        if numberOfDoors == 2 {
+            return .Coupe
+        }else{
+            return .Sedan
+        }
+    }
+}
+c.kind.description
