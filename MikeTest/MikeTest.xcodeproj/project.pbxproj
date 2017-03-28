@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BFFF89E1D775CD500E40FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF89D1D775CD500E40FF8 /* AppDelegate.swift */; };
+		9BFFF8A01D775CD500E40FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF89F1D775CD500E40FF8 /* ViewController.swift */; };
+		9BFFF8A31D775CD500E40FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFF8A11D775CD500E40FF8 /* Main.storyboard */; };
+		9BFFF8A51D775CD500E40FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFF8A41D775CD500E40FF8 /* Assets.xcassets */; };
+		9BFFF8A81D775CD500E40FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFF8A61D775CD500E40FF8 /* LaunchScreen.storyboard */; };
+		9BFFF8B01D775DA700E40FF8 /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFF8AF1D775DA700E40FF8 /* Sdk */; };
+		9BFFF8B21D775E2400E40FF8 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8B11D775E2400E40FF8 /* AWSCore.framework */; };
+		9BFFF8B31D775E2400E40FF8 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8B11D775E2400E40FF8 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BFFF8B61D775E3400E40FF8 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8B51D775E3400E40FF8 /* AWSDynamoDB.framework */; };
+		9BFFF8B71D775E3400E40FF8 /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8B51D775E3400E40FF8 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BFFF8BC1D775EE300E40FF8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8BB1D775EE300E40FF8 /* libsqlite3.tbd */; };
+		9BFFF8BE1D775EED00E40FF8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFFF8BD1D775EED00E40FF8 /* libz.tbd */; };
+		9BFFF8C21D775F9D00E40FF8 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8C11D775F9D00E40FF8 /* AWSMobileClient.swift */; };
+		9BFFF8C41D7760C100E40FF8 /* AmazonAws in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFF8C31D7760C100E40FF8 /* AmazonAws */; };
+		9BFFF8C61D777ACD00E40FF8 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8C51D777ACD00E40FF8 /* Locations.swift */; };
+		9BFFF8C81D777AD200E40FF8 /* LocationsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8C71D777AD200E40FF8 /* LocationsTable.swift */; };
+		9BFFF8CA1D777AD800E40FF8 /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8C91D777AD800E40FF8 /* NoSQLModelHelpers.swift */; };
+		9BFFF8CC1D777ADD00E40FF8 /* NoSQLQueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8CB1D777ADD00E40FF8 /* NoSQLQueryResultViewController.swift */; };
+		9BFFF8D01D777AE600E40FF8 /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8CF1D777AE600E40FF8 /* NoSQLSampleDataGenerator.swift */; };
+		9BFFF8D21D777AEC00E40FF8 /* NoSQLTableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8D11D777AEC00E40FF8 /* NoSQLTableFactory.swift */; };
+		9BFFF8D41D777AF000E40FF8 /* NoSQLTableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8D31D777AF000E40FF8 /* NoSQLTableListViewController.swift */; };
+		9BFFF8D61D777AF600E40FF8 /* NoSQLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8D51D777AF600E40FF8 /* NoSQLTableViewController.swift */; };
+		9BFFF8D81D777AFA00E40FF8 /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFFF8D71D777AFA00E40FF8 /* UserIdentityViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BFFF8B41D775E2400E40FF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BFFF8B71D775E3400E40FF8 /* AWSDynamoDB.framework in Embed Frameworks */,
+				9BFFF8B31D775E2400E40FF8 /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9BFFF89A1D775CD500E40FF8 /* MikeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MikeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFFF89D1D775CD500E40FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BFFF89F1D775CD500E40FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BFFF8A21D775CD500E40FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BFFF8A41D775CD500E40FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BFFF8A71D775CD500E40FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BFFF8A91D775CD500E40FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFFF8AF1D775DA700E40FF8 /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sdk; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Sdk"; sourceTree = "<group>"; };
+		9BFFF8B11D775E2400E40FF8 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Sdk/Aws/AWSCore.framework"; sourceTree = "<group>"; };
+		9BFFF8B51D775E3400E40FF8 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = "../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Sdk/Aws/AWSDynamoDB.framework"; sourceTree = "<group>"; };
+		9BFFF8BB1D775EE300E40FF8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9BFFF8BD1D775EED00E40FF8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9BFFF8C11D775F9D00E40FF8 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AWSMobileClient.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/AmazonAws/AWSMobileClient.swift"; sourceTree = "<group>"; };
+		9BFFF8C31D7760C100E40FF8 /* AmazonAws */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AmazonAws; path = "../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/AmazonAws"; sourceTree = "<group>"; };
+		9BFFF8C51D777ACD00E40FF8 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/Locations.swift"; sourceTree = "<group>"; };
+		9BFFF8C71D777AD200E40FF8 /* LocationsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationsTable.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/LocationsTable.swift"; sourceTree = "<group>"; };
+		9BFFF8C91D777AD800E40FF8 /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLModelHelpers.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLModelHelpers.swift"; sourceTree = "<group>"; };
+		9BFFF8CB1D777ADD00E40FF8 /* NoSQLQueryResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLQueryResultViewController.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLQueryResultViewController.swift"; sourceTree = "<group>"; };
+		9BFFF8CF1D777AE600E40FF8 /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLSampleDataGenerator.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLSampleDataGenerator.swift"; sourceTree = "<group>"; };
+		9BFFF8D11D777AEC00E40FF8 /* NoSQLTableFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLTableFactory.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLTableFactory.swift"; sourceTree = "<group>"; };
+		9BFFF8D31D777AF000E40FF8 /* NoSQLTableListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLTableListViewController.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLTableListViewController.swift"; sourceTree = "<group>"; };
+		9BFFF8D51D777AF600E40FF8 /* NoSQLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLTableViewController.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/NoSQL/NoSQLTableViewController.swift"; sourceTree = "<group>"; };
+		9BFFF8D71D777AFA00E40FF8 /* UserIdentityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserIdentityViewController.swift; path = "../../../../Downloads/MikeTest-aws-my-sample-app-ios-swift/MySampleApp/MySampleApp/Demo/UserIdentity/UserIdentityViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BFFF8971D775CD500E40FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFFF8BE1D775EED00E40FF8 /* libz.tbd in Frameworks */,
+				9BFFF8BC1D775EE300E40FF8 /* libsqlite3.tbd in Frameworks */,
+				9BFFF8B61D775E3400E40FF8 /* AWSDynamoDB.framework in Frameworks */,
+				9BFFF8B21D775E2400E40FF8 /* AWSCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BFFF8911D775CD500E40FF8 = {
+			isa = PBXGroup;
+			children = (
+				9BFFF8C31D7760C100E40FF8 /* AmazonAws */,
+				9BFFF8BD1D775EED00E40FF8 /* libz.tbd */,
+				9BFFF8BB1D775EE300E40FF8 /* libsqlite3.tbd */,
+				9BFFF8B51D775E3400E40FF8 /* AWSDynamoDB.framework */,
+				9BFFF8B11D775E2400E40FF8 /* AWSCore.framework */,
+				9BFFF89C1D775CD500E40FF8 /* MikeTest */,
+				9BFFF89B1D775CD500E40FF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BFFF89B1D775CD500E40FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BFFF89A1D775CD500E40FF8 /* MikeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BFFF89C1D775CD500E40FF8 /* MikeTest */ = {
+			isa = PBXGroup;
+			children = (
+				9BFFF89D1D775CD500E40FF8 /* AppDelegate.swift */,
+				9BFFF8C11D775F9D00E40FF8 /* AWSMobileClient.swift */,
+				9BFFF89F1D775CD500E40FF8 /* ViewController.swift */,
+				9BFFF8A11D775CD500E40FF8 /* Main.storyboard */,
+				9BFFF8C51D777ACD00E40FF8 /* Locations.swift */,
+				9BFFF8C71D777AD200E40FF8 /* LocationsTable.swift */,
+				9BFFF8CB1D777ADD00E40FF8 /* NoSQLQueryResultViewController.swift */,
+				9BFFF8C91D777AD800E40FF8 /* NoSQLModelHelpers.swift */,
+				9BFFF8CF1D777AE600E40FF8 /* NoSQLSampleDataGenerator.swift */,
+				9BFFF8D11D777AEC00E40FF8 /* NoSQLTableFactory.swift */,
+				9BFFF8D51D777AF600E40FF8 /* NoSQLTableViewController.swift */,
+				9BFFF8D71D777AFA00E40FF8 /* UserIdentityViewController.swift */,
+				9BFFF8D31D777AF000E40FF8 /* NoSQLTableListViewController.swift */,
+				9BFFF8A41D775CD500E40FF8 /* Assets.xcassets */,
+				9BFFF8A61D775CD500E40FF8 /* LaunchScreen.storyboard */,
+				9BFFF8AF1D775DA700E40FF8 /* Sdk */,
+				9BFFF8A91D775CD500E40FF8 /* Info.plist */,
+			);
+			path = MikeTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BFFF8991D775CD500E40FF8 /* MikeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BFFF8AC1D775CD500E40FF8 /* Build configuration list for PBXNativeTarget "MikeTest" */;
+			buildPhases = (
+				9BFFF8961D775CD500E40FF8 /* Sources */,
+				9BFFF8971D775CD500E40FF8 /* Frameworks */,
+				9BFFF8981D775CD500E40FF8 /* Resources */,
+				9BFFF8B41D775E2400E40FF8 /* Embed Frameworks */,
+				9BFFF8B81D775E6000E40FF8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MikeTest;
+			productName = MikeTest;
+			productReference = 9BFFF89A1D775CD500E40FF8 /* MikeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BFFF8921D775CD500E40FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Michael Bharrat";
+				TargetAttributes = {
+					9BFFF8991D775CD500E40FF8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9BFFF8951D775CD500E40FF8 /* Build configuration list for PBXProject "MikeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BFFF8911D775CD500E40FF8;
+			productRefGroup = 9BFFF89B1D775CD500E40FF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BFFF8991D775CD500E40FF8 /* MikeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BFFF8981D775CD500E40FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFFF8A81D775CD500E40FF8 /* LaunchScreen.storyboard in Resources */,
+				9BFFF8B01D775DA700E40FF8 /* Sdk in Resources */,
+				9BFFF8A51D775CD500E40FF8 /* Assets.xcassets in Resources */,
+				9BFFF8A31D775CD500E40FF8 /* Main.storyboard in Resources */,
+				9BFFF8C41D7760C100E40FF8 /* AmazonAws in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BFFF8B81D775E6000E40FF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BFFF8961D775CD500E40FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFFF8CC1D777ADD00E40FF8 /* NoSQLQueryResultViewController.swift in Sources */,
+				9BFFF8C81D777AD200E40FF8 /* LocationsTable.swift in Sources */,
+				9BFFF8D21D777AEC00E40FF8 /* NoSQLTableFactory.swift in Sources */,
+				9BFFF8A01D775CD500E40FF8 /* ViewController.swift in Sources */,
+				9BFFF8D61D777AF600E40FF8 /* NoSQLTableViewController.swift in Sources */,
+				9BFFF89E1D775CD500E40FF8 /* AppDelegate.swift in Sources */,
+				9BFFF8D01D777AE600E40FF8 /* NoSQLSampleDataGenerator.swift in Sources */,
+				9BFFF8C61D777ACD00E40FF8 /* Locations.swift in Sources */,
+				9BFFF8C21D775F9D00E40FF8 /* AWSMobileClient.swift in Sources */,
+				9BFFF8D81D777AFA00E40FF8 /* UserIdentityViewController.swift in Sources */,
+				9BFFF8D41D777AF000E40FF8 /* NoSQLTableListViewController.swift in Sources */,
+				9BFFF8CA1D777AD800E40FF8 /* NoSQLModelHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BFFF8A11D775CD500E40FF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BFFF8A21D775CD500E40FF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BFFF8A61D775CD500E40FF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BFFF8A71D775CD500E40FF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BFFF8AA1D775CD500E40FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BFFF8AB1D775CD500E40FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BFFF8AD1D775CD500E40FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MikeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mdb181.MikeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BFFF8AE1D775CD500E40FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MikeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mdb181.MikeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BFFF8951D775CD500E40FF8 /* Build configuration list for PBXProject "MikeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFFF8AA1D775CD500E40FF8 /* Debug */,
+				9BFFF8AB1D775CD500E40FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BFFF8AC1D775CD500E40FF8 /* Build configuration list for PBXNativeTarget "MikeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFFF8AD1D775CD500E40FF8 /* Debug */,
+				9BFFF8AE1D775CD500E40FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BFFF8921D775CD500E40FF8 /* Project object */;
+}
